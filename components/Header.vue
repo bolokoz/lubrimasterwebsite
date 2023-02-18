@@ -1,6 +1,4 @@
 <template>
-    
-
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://lubrimaster.com/" class="flex items-center">
@@ -8,6 +6,31 @@
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Lubrimaster</span>
   </a>
   <div class="flex md:order-2">
+
+        <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+
+        
+            <Icon name="uil:language" size="1.5em"/>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownDots" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                    <NuxtLink :to="switchLocalePath('es')" class="block px-4 py-2 hover:bg-brand-light dark:hover:bg-gray-600 dark:hover:text-white">Español</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink :to="switchLocalePath('pt')" class="block px-4 py-2 hover:bg-brand-light dark:hover:bg-gray-600 dark:hover:text-white">Português</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink :to="switchLocalePath('pt')" class="block px-4 py-2 hover:bg-brand-light  dark:hover:bg-gray-600 dark:hover:text-white">Guarani</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink :to="switchLocalePath('pt')" class="block px-4 py-2 hover:bg-brand-light dark:hover:bg-gray-600 dark:hover:text-white">English</NuxtLink>
+                </li>
+            </ul>
+        </div>
+
       <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contato</button>
       <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
         <span class="sr-only">Abrir menu</span>
@@ -20,14 +43,14 @@
         <NuxtLink to="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Início</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/empresa" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre nós</NuxtLink>
+        <NuxtLink to="/empresa" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{{ t('hola') }} </NuxtLink>
       </li>
       <li>
         <NuxtLink to="/productos" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Marcas e Produtos</NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/contacto" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</NuxtLink>
-      </li>
+    
+
+
     </ul>
   </div>
   </div>
@@ -38,10 +61,26 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { initCollapses } from 'flowbite'
+import { initCollapses, initDropdowns } from 'flowbite'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
     initCollapses();
+    initDropdowns();
+})
+
+const { t } = useI18n({
+  useScope: 'local'
 })
 </script>
+
+<i18n lang="json">
+    {
+      "es": {
+        "hola": "Holá! Quetal"
+      },
+      "pt": {
+        "hola": "Olá"
+      }
+    }
+</i18n>
