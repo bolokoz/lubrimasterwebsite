@@ -1,0 +1,11 @@
+{
+    "i18n-ally.localesPaths": [
+        "locales"
+    ],
+    "i18n-ally.keystyle": "nested",
+    // default: git config user.name
+"i18n-ally.review.user.name": "Boloko",
+
+// default: git config user.email
+"i18n-ally.review.user.email": "yurifbeck@gmail.com",
+}
