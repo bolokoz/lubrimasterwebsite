@@ -2,8 +2,11 @@ module.exports = {
     content: [
       "./node_modules/flowbite/**/*.js",
     ],
+    corePlugins: {
+      aspectRatio: false,
+    },
     plugins: [
-      require('flowbite')
+      require('flowbite', '@tailwindcss/aspect-ratio'),
     ],
     darkMode: 'class',
     theme: {
