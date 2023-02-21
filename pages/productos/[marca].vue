@@ -1,7 +1,13 @@
+<script setup>
+  const route = useRoute()
+  // When accessing /posts/1, route.params.id will be 1
+  const marca = (route.params.marca)
+</script>
+
 <template>
     <div class="bg-purple-100">
     <div class="page bg-purple-100">
-      <h1 class="text-5xl mb-5">Post 1 Page</h1>
+      <h1 class="text-5xl mb-5">{{ marca }}</h1>
   
       <p class="mb-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure
@@ -15,4 +21,6 @@
       <nuxt-link class="bg-white p-2 m-3" to="/post">Go Back</nuxt-link>
     </div>
     </div>
-  </template>
+</template>
+
+  
