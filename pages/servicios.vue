@@ -1,6 +1,3 @@
 <template>
-    <div>
-
-        <h1>{{ $t('contacto') }}</h1>
-    </div>
+    <Section2></Section2>
 </template>
