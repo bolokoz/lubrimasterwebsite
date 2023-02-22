@@ -4,10 +4,10 @@
     <Hero></Hero>
     <Information></Information>
 
+    <Numbers></Numbers>
     <Marcas></Marcas>
     <Carousel></Carousel>
-    <Numbers></Numbers>
-    <Section2></Section2>
+    <!-- <Section2></Section2> -->
     <!-- <ProductsSection></ProductsSection> -->
   </div>
   </template>

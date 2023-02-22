@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-cta-light dark:bg-gray-900">
+    <section class="bg-brand dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-white sm:text-lg dark:text-gray-400">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Horario de atendimento</h2>
