@@ -1,12 +1,15 @@
 <template>
-    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        <Icon name="uil:whatsapp" class="my-float"></Icon>
+    </a>
+    <footer class="p-4 bg-brand-light sm:p-6 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
+                <NuxtLink to="/" class="flex items-center">
+                    <img src="~/assets/images/logo.png" class="mr-3 h-8" alt="Lubrimaster Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lubrimaster S.A.</span>
-                </a>
+                </NuxtLink>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <!-- <div>
@@ -26,6 +29,7 @@
                         <li class="mb-4">
                             <Icon name="uil:whatsapp" />
                             <a href="https://github.com/themesberg/flowbite" class="hover:underline "> Whatsapp</a>
+                            
                         </li>
                         <li class="mb-4">
                             <Icon name="uil:instagram" />
@@ -52,7 +56,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com" class="hover:underline">Lubrimaster S.A. Pedro Juan Caballero - Paraguay</a> 
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Lubrimaster S.A. Pedro Juan Caballero - Paraguay
             </span>
             <!-- <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -75,3 +79,24 @@
     </div>
 </footer>
 </template>
+
+<style>
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	/* margin-top:8px; */
+}
+</style>
