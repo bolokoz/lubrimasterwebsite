@@ -10,6 +10,7 @@
         <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
 
         
+          {{ locale }}
             <Icon name="uil:language" size="1.5em"/>
         </button>
 
@@ -22,12 +23,12 @@
                 <li>
                     <NuxtLink :to="switchLocalePath('pt')" class="block px-4 py-2 hover:bg-brand-light dark:hover:bg-gray-600 dark:hover:text-white">Português</NuxtLink>
                 </li>
-                <li>
+                <!-- <li>
                     <NuxtLink :to="switchLocalePath('gn')" class="block px-4 py-2 hover:bg-brand-light  dark:hover:bg-gray-600 dark:hover:text-white">Guarani</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink :to="switchLocalePath('en')" class="block px-4 py-2 hover:bg-brand-light dark:hover:bg-gray-600 dark:hover:text-white">English</NuxtLink>
-                </li>
+                </li> -->
             </ul>
         </div>
 
@@ -65,6 +66,8 @@
 <script setup>
 import { onMounted } from 'vue'
 import { initCollapses, initDropdowns } from 'flowbite'
+
+const { locale, locales, setLocale } = useI18n()
 
 // initialize components based on data attribute selectors
 onMounted(() => {
