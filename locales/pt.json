@@ -1,6 +1,6 @@
 {
-  "hero_button": "Falar com vendas",
-  "contacto": "",
+  "hero_button": "Contate-nos",
+  "contacto": "Contate-nos",
   "header": {
     "about_us": "Sobre nós",
     "home": "Início",
@@ -9,5 +9,10 @@
   },
   "footer": {
     "follow-us": "Siga-nos"
-  }
+  },
+  "contato": "Contate-nos",
+  "desculpe-site-em-construcao": "Desculpe. Site em construção",
+  "importadora-e-distribuidora-de-oleos-lubrificantes-filtros-automotivos-aditivos-baterias-e-outros-less-than-b-greater-than-ha-mais-de-30-anos-no-mercado": "Importadora e Distribuidora de óleos lubrificantes, filtros automotivos, aditivos, baterias e outros. Há mais de 30 anos no mercado.",
+  "conhecer-produtos": "Ver produtos",
+  "marcas-parceiras": "Marcas parceiras"
 }

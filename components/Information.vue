@@ -28,8 +28,7 @@
         </div>
         <div class="grid mt-8">
             <div class="map-responsive">
-                <iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11530.36336470397!2d-54.585005482211514!3d-20.45460114903385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8954ac0b10d%3A0x7149aba0cb5688b8!2sShopping%20Campo%20Grande!5e0!3m2!1ses-419!2sbr!4v1676779769007!5m2!1ses-419!2sbr"  loading="lazy" width="600" height="450" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14738.18647688655!2d-55.7252608!3d-22.55865035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94626e85bdb3eaa7%3A0x7e53422a6cf2fbd6!2sLubrimaster%20S.A.%20Pedro%20Juan%20Caballero!5e0!3m2!1spt-BR!2spy!4v1677799607712!5m2!1spt-BR!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         </div>

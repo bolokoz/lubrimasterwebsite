@@ -1,7 +1,7 @@
 <template>
-    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-        <Icon name="uil:whatsapp" class="my-float"></Icon>
-    </a>
+    <NuxtLink to="/contacto" class="float hover:bg-green-700 hover:-translate-y-0.5">
+        <Icon name="uil:whatsapp" class="my-float "></Icon>
+    </NuxtLink>
     <footer class="p-4 bg-brand-light sm:p-6 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
@@ -24,20 +24,20 @@
                     </ul>
                 </div> -->
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{{ $t('footer.follow-us') }}</h2>
+                    <!-- <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{{ $t('footer.follow-us') }}</h2> -->
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
                             <Icon name="uil:whatsapp" />
-                            <a href="https://github.com/themesberg/flowbite" class="hover:underline "> Whatsapp</a>
+                            <a href="https://api.whatsapp.com/send?phone=595972106050" class="hover:underline "> Whatsapp</a>
                             
                         </li>
                         <li class="mb-4">
                             <Icon name="uil:instagram" />
-                            <a href="https://github.com/themesberg/flowbite" class="hover:underline "> Instagram</a>
+                            <a href="https://www.instagram.com/l_ubrimaster" class="hover:underline "> Instagram</a>
                         </li>
                         <li>
                             <Icon name="uil:facebook" />
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"> Facebook</a>
+                            <a href="https://www.facebook.com/lubrimaster.pypjc" class="hover:underline"> Facebook</a>
                         </li>
                     </ul>
                 </div>

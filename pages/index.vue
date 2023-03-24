@@ -4,9 +4,9 @@
     <Hero></Hero>
     <Information></Information>
 
-    <Numbers></Numbers>
+    <!-- <Numbers></Numbers> -->
     <Marcas></Marcas>
-    <Carousel></Carousel>
+    <!-- <Carousel></Carousel> -->
     <!-- <Section2></Section2> -->
     <!-- <ProductsSection></ProductsSection> -->
   </div>

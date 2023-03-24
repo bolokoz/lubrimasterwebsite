@@ -1,13 +1,10 @@
 {
-  "hero_button": "Talk to sales",
-  "header": {
-    "home": "Início",
-    "about_us": "About us",
-    "products": "Products and Partners",
-    "open_menu": "Abrir menu"
-  },
-  "contacto": "",
-  "footer": {
-    "follow-us": "Follow us"
-  }
+  "contacto": "contact us",
+  "contato": "contact us",
+  "hero_button": "Contact us",
+  "conhecer-produtos": "See products",
+  "importadora-e-distribuidora-de-oleos-lubrificantes-filtros-automotivos-aditivos-baterias-e-outros-less-than-b-greater-than-ha-mais-de-30-anos-no-mercado": "",
+  "marcas-parceiras": "Marcas parceiras",
+  "contacto-comercial": "Contacto Comercial",
+  "para-duvidas-e-orcamentos": "Para dúvidas e orçamentos"
 }
